@@ -3,19 +3,19 @@
             <li class="nav-item">
                 <a class="nav-link active" href="{{ path('ville_liste', {}) }}">
                     <span data-feather="users"></span>
-                    Ville <span class="sr-only"></span>
+                    {{ 'menu.ville_anarana'|trans({'__var__':lang}, 'messages', lang) }} <span class="sr-only"></span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="{{ path('hotel_liste', {}) }}">
                     <span data-feather="users"></span>
-                    Hotel <span class="sr-only"></span>
+                    {{ 'menu.hotel'|trans({}, 'messages', lang) }} <span class="sr-only"></span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="{{ path('reservation_liste', {}) }}">
                     <span data-feather="users"></span>
-                    Reservation <span class="sr-only"></span>
+                    {{ 'menu.reservation'|trans({}, 'messages', lang) }}  <span class="sr-only"></span>
                 </a>
             </li>
             {#<li class="nav-item">

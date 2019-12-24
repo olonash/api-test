@@ -37,7 +37,10 @@ class HotelController extends Controller
                 $hotels = $response->toArray();
                 break;
         }
-        return $this->render('hotel/liste.html.twig', ['liste' => $hotels]);
+        return $this->render('hotel/liste.html.twig', [
+            'liste' => $hotels,
+            'lang' => 'fr'
+        ]);
     }
 
     /**

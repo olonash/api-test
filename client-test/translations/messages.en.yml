@@ -1,0 +1,10 @@
+api:
+    messages:
+        success: Succès.
+        data_error: Erreur de donnée(s).
+        item_not_found: Element non trouvé.
+        no_right_action: Vous n'avez pas le droit pour cette action.
+menu:
+  ville : City
+  ville_anarana:  City __var__
+  hotel: Motel
