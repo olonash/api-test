@@ -1,0 +1,43 @@
+resources:
+  App\Entity\Hotel:
+    collectionOperations :
+      liste_hotel_ville:
+        method: GET
+        route_name: 'liste_hotel_ville'
+        controller: 'App\Controller\HotelController'
+        #normalization_context:
+        #  groups: ['ville.hotel']
+        swagger_context:
+          summary: Liste des hotels par ville
+          description: Récupère la liste des hotels par id ville
+          parameters:
+            -
+              name : id
+              in: path
+              type: int
+              required: true
+              description: id de la ville
+          responses:
+            200:
+              description: Success
+              schema:
+                type : object
+                properties:
+                  code:
+                    type: integer
+                    required: true
+                    description: code success
+                  message:
+                    type: string
+                    required: true
+                    description: Message de success
+                  data:
+                    description: Liste des fiches d'espaces d'un onglet
+                    type : array
+                    items:
+                      type : object
+                      properties:
+                        id:
+                          type: integer
+                          required: true
+                          description: Id du commentaire
